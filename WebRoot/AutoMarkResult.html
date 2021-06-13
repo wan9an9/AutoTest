@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
+	</head>
+	<body>
+		<div id="div_automarkresult" style="position:absolute;width: 800px;top:10px;height: 580px;">
+		<div style="position:absolute;left:50px;width: 700px;height: 580px;">
+		<form class="layui-form">
+<div style="position:absolute;width: 700px;height: 70px;">
+<div class="layui-form-item" style="position:absolute;left:40px;width: 50px;height: 30px;text-align: right;">
+    <h3>班级：</h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:90px;width: 450px;height: 30px;text-align: left;">
+    <h3 id="h3_sclass" style="font-family:Microsoft JhengHei;font-size: large;"></h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:540px;width: 30px;height: 30px;text-align: right;">
+    <h3>第</h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:570px;width: 50px;height: 30px;text-align: center;">
+    <h3 id="h3_id" style="font-family:Microsoft JhengHei;font-size: large;"></h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:620px;width: 30px;height: 30px;text-align: left;">
+    <h3>题</h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:40px;width: 50px;top:40px;height: 30px;text-align: right;">
+    <h3>学号：</h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:90px;top:40px;width: 430px;height: 30px;text-align: left;">
+    <h3 id="h3_sid" style="font-family:Microsoft JhengHei;font-size: large;"></h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:520px;top:40px;width: 50px;height: 30px;text-align: right;">
+    <h3>评分：</h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:570px;top:40px;width: 40px;height: 30px;text-align: right;">
+    <h3 id="h3_cpoint" style="font-family:Microsoft JhengHei;font-size: large;"></h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:610px;top:40px;width: 10px;height: 30px;text-align: center;">
+    <h3 style="font-family:Microsoft JhengHei;font-size: large;">/</h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:620px;top:40px;width: 40px;height: 30px;text-align: left;">
+    <h3 id="h3_point" style="font-family:Microsoft JhengHei;font-size: large;"></h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:40px;width: 50px;top:80px;height: 30px;text-align: right;">
+    <h3>姓名：</h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:90px;top:80px;width: 450px;height: 30px;text-align: left;">
+    <h3 id="h3_sname" style="font-family:Microsoft JhengHei;font-size: large;"></h3>
+</div>
+<div style="position: absolute;top:130px;left:0;width: 650px;">
+   <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">题干：</label>
+    <div class="layui-input-block">
+      <textarea name="topic" id="topic" readonly="readonly"  class="layui-textarea" style="font-family:Microsoft JhengHei;font-size: large;"></textarea>
+    </div>
+  </div>
+     <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">考察点：</label>
+    <div class="layui-input-block">
+      <textarea name="knowledge" id="knowledge" readonly="readonly"  class="layui-textarea" style="font-family:Microsoft JhengHei;font-size: large;"></textarea>
+    </div>
+  </div>
+     <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">参考答案：</label>
+    <div class="layui-input-block">
+      <textarea name="answer" id="answer" readonly="readonly"  class="layui-textarea" style="font-family:Microsoft JhengHei;font-size: large;"></textarea>
+    </div>
+  </div>
+     <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">学生答案：</label>
+    <div class="layui-input-block">
+      <textarea name="myanswer" id="myanswer" readonly="readonly"  class="layui-textarea" style="font-family:Microsoft JhengHei;font-size: large;"></textarea>
+    </div>
+  </div>
+  </div>
+</div>
+  </form>
+  </div>
+  </div>
+		<script type="text/javascript" charset="utf-8" src="layui/layui.js" ></script>
+<script type="text/javascript">
+        layui.use(['laydate'],function(){
+  	 		var laydate = layui.laydate;
+  	 		});
+</script>
+	</body>
+</html>

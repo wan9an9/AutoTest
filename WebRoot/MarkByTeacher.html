@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
+	</head>
+	<body>
+		<div id="div_answerq" style="position:absolute;width: 800px;top:10px;height: 580px;">
+		<div style="position:absolute;left:50px;width: 700px;height: 580px;">
+		<form class="layui-form">
+<div style="position:absolute;width: 700px;height: 30px;">
+<div class="layui-form-item" style="position:absolute;left:0;width: 20px;height: 30px;text-align: right;">
+    <h3>第</h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:20px;width: 50px;height: 30px;text-align: center;">
+    <h3 id="h3_id" style="font-family:Microsoft JhengHei;font-size: large;"></h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:70px;width: 20px;height: 30px;text-align: left;">
+    <h3>题</h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:200px;width: 60px;height: 30px;text-align: right;">
+    <h3>学号：</h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:260px;width: 250px;height: 30px;text-align: left;">
+    <h3 id="h3_sid" style="font-family:Microsoft JhengHei;font-size: large;"></h3>
+</div>
+<div class="layui-form-item" style="position:absolute;right:70px;width: 40px;height: 30px;text-align: right;">
+    <h3>本题</h3>
+</div>
+<div class="layui-form-item" style="position:absolute;right:20px;width: 50px;height: 30px;text-align: center;">
+    <h3 id="h3_point" style="font-family:Microsoft JhengHei;font-size: large;"></h3>
+</div>
+<div class="layui-form-item" style="position:absolute;right:0;width: 20px;height: 30px;text-align: left;">
+    <h3>分</h3>
+</div>
+</div>
+<div style="position: absolute;top:50px;left:0;width: 650px;">
+   <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">题目：</label>
+    <div class="layui-input-block">
+      <textarea name="topic" id="topic" readonly="readonly"  class="layui-textarea"></textarea>
+    </div>
+  </div>
+<div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">参考答案：</label>
+    <div class="layui-input-block">
+      <textarea name="answer" id="answer" readonly="readonly"  class="layui-textarea" style="height: 180px;"></textarea>
+    </div>
+  </div>
+<div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">学生答案：</label>
+    <div class="layui-input-block">
+      <textarea name="myanswer" id="myanswer" readonly="readonly" class="layui-textarea" style="height: 180px;font-family:Microsoft JhengHei;font-size: medium;"></textarea>
+    </div>
+  </div>
+             <div class="layui-form-item">
+    <label class="layui-form-label">得分</label>
+    <div class="layui-input-block">
+      <input type="text" name="ppoint" id="ppoint" required  lay-verify="required|number" placeholder="请输入得分" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  </div>
+  </form>
+  </div>
+  </div>
+		<script type="text/javascript" charset="utf-8" src="layui/layui.js" ></script>
+<script type="text/javascript">
+layui.use(['form','jquery'], function(){
+  var form = layui.form;
+  var $ = layui.$;
+  
+});
+
+</script>
+	</body>
+</html>
