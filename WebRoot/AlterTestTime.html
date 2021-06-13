@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
+	</head>
+	<body>
+<div id="div_altertime" style="position:absolute;width: 800px;top:10px;height: 580px;">
+		<div style="position:absolute;left:50px;width: 700px;height: 580px;">
+		<form class="layui-form">
+<div style="position:absolute;width: 700px;height: 70px;">
+<div class="layui-form-item" style="position:absolute;left:0;width: 50px;height: 30px;text-align: right;">
+    <h3>科目：</h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:50px;width: 450px;height: 30px;text-align: left;">
+    <h3 id="h3_subject1" style="font-family:Microsoft JhengHei;font-size: large;"></h3>
+</div>
+<div class="layui-form-item" style="position:absolute;right:70px;width: 100px;height: 30px;text-align: right;">
+    <h3>机器评阅：</h3>
+</div>
+<div class="layui-form-item" style="position:absolute;right:20px;width: 50px;height: 30px;text-align: left;">
+    <h3 id="h3_ccheckover" style="font-family:Microsoft JhengHei;font-size: large;"></h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:0;width: 50px;top:40px;height: 30px;text-align: right;">
+    <h3>班级：</h3>
+</div>
+<div class="layui-form-item" style="position:absolute;left:50px;top:40px;width: 450px;height: 30px;text-align: left;">
+    <h3 id="h3_classname1" style="font-family:Microsoft JhengHei;font-size: large;"></h3>
+</div>
+<div class="layui-form-item" style="position:absolute;right:70px;top:40px;width: 100px;height: 30px;text-align: right;">
+    <h3>人工评阅：</h3>
+</div>
+<div class="layui-form-item" style="position:absolute;right:20px;top:40px;width: 50px;height: 30px;text-align: left;">
+    <h3 id="h3_pcheckover" style="font-family:Microsoft JhengHei;font-size: large;"></h3>
+</div>
+</div>
+<div style="position: absolute;top:50px;left:0;width: 650px;">
+<div class="layui-form-item" style="position:absolute;left:300px;width: 100px;top:50px;height: 30px;">
+    <h3>考试时间</h3>
+</div>
+    <div class="layui-inline" style="position:absolute;top: 90px;left:80px;">
+      <div class="layui-input-inline">
+        <input type="text" class="layui-input" id="begintime1" placeholder="开考时间【年月日时分秒】">
+      </div>
+    </div>
+        <div class="layui-inline" style="position:absolute;top: 90px;left:410px;">
+      <div class="layui-input-inline">
+        <input type="text" class="layui-input" id="endtime1" placeholder="结束时间【年月日时分秒】">
+      </div>
+    </div>
+  </div>
+  </form>
+  </div>
+  </div>
+		<script type="text/javascript" charset="utf-8" src="layui/layui.js" ></script>
+<script type="text/javascript">
+        layui.use(['laydate'],function(){
+  	 		var laydate = layui.laydate;
+  	 
+  	   //日期时间选择器
+  laydate.render({
+    elem: '#begintime1'
+    ,type: 'datetime'
+  });   
+  laydate.render({
+    elem: '#endtime1'
+    ,type: 'datetime'
+  });
+});
+</script>
+	</body>
+</html>
